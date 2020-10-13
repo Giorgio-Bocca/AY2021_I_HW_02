@@ -32,8 +32,8 @@ int main(void)
     
     CyGlobalIntEnable; /* Enable global interrupts. */
     
-    Timer_LED_RGB_Start(); 
-    LED_RGB_ISR_StartEx(Custom_LED_RGB_ISR);
+    Timer_LED_RGB_Start(); //inizializzo il timer
+    LED_RGB_ISR_StartEx(Custom_LED_RGB_ISR); //inizializzo la ISR
 
     /* Place your initialization/startup code here (e.g. MyInst_Start()) */
     
